@@ -30,10 +30,8 @@ class ViewController: UIViewController {
     
     func updateButtonUIState() {
         if captureDevice != nil && captureDevice.torchActive {
-            toggleButton.setTitle("Turn Off", forState:UIControlState.Normal)
             toggleButton.setBackgroundImage(UIImage(named: "button_on"), forState: UIControlState.Normal)
         } else {
-            toggleButton.setTitle("Turn On", forState:UIControlState.Normal)
             toggleButton.setBackgroundImage(UIImage(named: "button_off"), forState: UIControlState.Normal)
         }
     }
