@@ -12,26 +12,7 @@
 		8B5CC6681D68AF870098B238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5CC6661D68AF870098B238 /* Main.storyboard */; };
 		8B5CC66A1D68AF870098B238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5CC6691D68AF870098B238 /* Assets.xcassets */; };
 		8B5CC66D1D68AF870098B238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5CC66B1D68AF870098B238 /* LaunchScreen.storyboard */; };
-		8B5CC6781D68AF870098B238 /* FlashlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CC6771D68AF870098B238 /* FlashlightTests.swift */; };
-		8B5CC6831D68AF870098B238 /* FlashlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CC6821D68AF870098B238 /* FlashlightUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8B5CC6741D68AF870098B238 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B5CC6571D68AF870098B238 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B5CC65E1D68AF870098B238;
-			remoteInfo = Flashlight;
-		};
-		8B5CC67F1D68AF870098B238 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8B5CC6571D68AF870098B238 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B5CC65E1D68AF870098B238;
-			remoteInfo = Flashlight;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8B5CC65F1D68AF870098B238 /* Flashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,30 +22,10 @@
 		8B5CC6691D68AF870098B238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5CC66C1D68AF870098B238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B5CC66E1D68AF870098B238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B5CC6731D68AF870098B238 /* FlashlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B5CC6771D68AF870098B238 /* FlashlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashlightTests.swift; sourceTree = "<group>"; };
-		8B5CC6791D68AF870098B238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B5CC67E1D68AF870098B238 /* FlashlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B5CC6821D68AF870098B238 /* FlashlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashlightUITests.swift; sourceTree = "<group>"; };
-		8B5CC6841D68AF870098B238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8B5CC65C1D68AF870098B238 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B5CC6701D68AF870098B238 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B5CC67B1D68AF870098B238 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				8B5CC6611D68AF870098B238 /* Flashlight */,
-				8B5CC6761D68AF870098B238 /* FlashlightTests */,
-				8B5CC6811D68AF870098B238 /* FlashlightUITests */,
 				8B5CC6601D68AF870098B238 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				8B5CC65F1D68AF870098B238 /* Flashlight.app */,
-				8B5CC6731D68AF870098B238 /* FlashlightTests.xctest */,
-				8B5CC67E1D68AF870098B238 /* FlashlightUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,24 +62,6 @@
 				8B5CC66E1D68AF870098B238 /* Info.plist */,
 			);
 			path = Flashlight;
-			sourceTree = "<group>";
-		};
-		8B5CC6761D68AF870098B238 /* FlashlightTests */ = {
-			isa = PBXGroup;
-			children = (
-				8B5CC6771D68AF870098B238 /* FlashlightTests.swift */,
-				8B5CC6791D68AF870098B238 /* Info.plist */,
-			);
-			path = FlashlightTests;
-			sourceTree = "<group>";
-		};
-		8B5CC6811D68AF870098B238 /* FlashlightUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8B5CC6821D68AF870098B238 /* FlashlightUITests.swift */,
-				8B5CC6841D68AF870098B238 /* Info.plist */,
-			);
-			path = FlashlightUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,42 +84,6 @@
 			productReference = 8B5CC65F1D68AF870098B238 /* Flashlight.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B5CC6721D68AF870098B238 /* FlashlightTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B5CC68A1D68AF870098B238 /* Build configuration list for PBXNativeTarget "FlashlightTests" */;
-			buildPhases = (
-				8B5CC66F1D68AF870098B238 /* Sources */,
-				8B5CC6701D68AF870098B238 /* Frameworks */,
-				8B5CC6711D68AF870098B238 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B5CC6751D68AF870098B238 /* PBXTargetDependency */,
-			);
-			name = FlashlightTests;
-			productName = FlashlightTests;
-			productReference = 8B5CC6731D68AF870098B238 /* FlashlightTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		8B5CC67D1D68AF870098B238 /* FlashlightUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8B5CC68D1D68AF870098B238 /* Build configuration list for PBXNativeTarget "FlashlightUITests" */;
-			buildPhases = (
-				8B5CC67A1D68AF870098B238 /* Sources */,
-				8B5CC67B1D68AF870098B238 /* Frameworks */,
-				8B5CC67C1D68AF870098B238 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B5CC6801D68AF870098B238 /* PBXTargetDependency */,
-			);
-			name = FlashlightUITests;
-			productName = FlashlightUITests;
-			productReference = 8B5CC67E1D68AF870098B238 /* FlashlightUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,14 +97,6 @@
 					8B5CC65E1D68AF870098B238 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 6UDP3N5R5N;
-					};
-					8B5CC6721D68AF870098B238 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 8B5CC65E1D68AF870098B238;
-					};
-					8B5CC67D1D68AF870098B238 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 8B5CC65E1D68AF870098B238;
 					};
 				};
 			};
@@ -219,8 +114,6 @@
 			projectRoot = "";
 			targets = (
 				8B5CC65E1D68AF870098B238 /* Flashlight */,
-				8B5CC6721D68AF870098B238 /* FlashlightTests */,
-				8B5CC67D1D68AF870098B238 /* FlashlightUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,20 +129,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B5CC6711D68AF870098B238 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B5CC67C1D68AF870098B238 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,36 +141,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B5CC66F1D68AF870098B238 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B5CC6781D68AF870098B238 /* FlashlightTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8B5CC67A1D68AF870098B238 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B5CC6831D68AF870098B238 /* FlashlightUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8B5CC6751D68AF870098B238 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8B5CC65E1D68AF870098B238 /* Flashlight */;
-			targetProxy = 8B5CC6741D68AF870098B238 /* PBXContainerItemProxy */;
-		};
-		8B5CC6801D68AF870098B238 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8B5CC65E1D68AF870098B238 /* Flashlight */;
-			targetProxy = 8B5CC67F1D68AF870098B238 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8B5CC6661D68AF870098B238 /* Main.storyboard */ = {
@@ -422,52 +272,6 @@
 			};
 			name = Release;
 		};
-		8B5CC68B1D68AF870098B238 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FlashlightTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cm.nr.FlashlightTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flashlight.app/Flashlight";
-			};
-			name = Debug;
-		};
-		8B5CC68C1D68AF870098B238 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = FlashlightTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cm.nr.FlashlightTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flashlight.app/Flashlight";
-			};
-			name = Release;
-		};
-		8B5CC68E1D68AF870098B238 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FlashlightUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cm.nr.FlashlightUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Flashlight;
-			};
-			name = Debug;
-		};
-		8B5CC68F1D68AF870098B238 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = FlashlightUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cm.nr.FlashlightUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Flashlight;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,22 +291,7 @@
 				8B5CC6891D68AF870098B238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		8B5CC68A1D68AF870098B238 /* Build configuration list for PBXNativeTarget "FlashlightTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B5CC68B1D68AF870098B238 /* Debug */,
-				8B5CC68C1D68AF870098B238 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		8B5CC68D1D68AF870098B238 /* Build configuration list for PBXNativeTarget "FlashlightUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8B5CC68E1D68AF870098B238 /* Debug */,
-				8B5CC68F1D68AF870098B238 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
