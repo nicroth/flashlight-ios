@@ -16,23 +16,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         turnTorchOn()
-        updateButtonUIState()
     }
     
     @IBAction func tapToggleButton() {
-        if captureDevice != nil && captureDevice.torchActive {
+        if captureDevice != nil && captureDevice.torchMode == AVCaptureTorchMode.Off {
             turnTorchOn()
         } else {
             turnTorchOff()
-        }
-        updateButtonUIState()
-    }
-    
-    func updateButtonUIState() {
-        if captureDevice != nil && captureDevice.torchActive {
-            toggleButton.setBackgroundImage(UIImage(named: "button_on"), forState: UIControlState.Normal)
-        } else {
-            toggleButton.setBackgroundImage(UIImage(named: "button_off"), forState: UIControlState.Normal)
         }
     }
     
@@ -40,24 +30,27 @@ class ViewController: UIViewController {
         if captureDevice != nil && captureDevice.hasTorch {
             do {
                 try captureDevice.lockForConfiguration()
-                try captureDevice.setTorchModeOnWithLevel(1)
+                captureDevice.torchMode = AVCaptureTorchMode.On
+                try captureDevice.setTorchModeOnWithLevel(AVCaptureMaxAvailableTorchLevel)
                 captureDevice.unlockForConfiguration()
             } catch {
                 print(error)
             }
         }
+        toggleButton.setBackgroundImage(UIImage(named: "button_on"), forState: UIControlState.Normal)
     }
     
     func turnTorchOff() {
         if captureDevice != nil && captureDevice.hasTorch {
             do {
                 try captureDevice.lockForConfiguration()
-                try captureDevice.setTorchModeOnWithLevel(0)
+                captureDevice.torchMode = AVCaptureTorchMode.Off
                 captureDevice.unlockForConfiguration()
             } catch {
                 print(error)
             }
         }
+        toggleButton.setBackgroundImage(UIImage(named: "button_off"), forState: UIControlState.Normal)
     }
 }
 
