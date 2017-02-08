@@ -1,49 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flashlight" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-DB-zN0">
-                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_on" translatesAutoresizingMaskIntoConstraints="NO" id="0OR-k3-ht2">
+                                <rect key="frame" x="27" y="173" width="320" height="320"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="WLp-YG-ZqX"/>
-                                    <constraint firstAttribute="height" constant="320" id="dAt-qz-o9l"/>
+                                    <constraint firstAttribute="height" constant="320" id="nmo-5W-MzV"/>
+                                    <constraint firstAttribute="width" constant="320" id="tFY-2A-O59"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="button_off"/>
-                                <connections>
-                                    <action selector="tapToggleButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rh7-El-Thc"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iL4-DB-zN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eNm-mq-5jK"/>
-                            <constraint firstItem="iL4-DB-zN0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x7u-k2-dt8"/>
+                            <constraint firstItem="0OR-k3-ht2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PUQ-4Z-Qhv"/>
+                            <constraint firstItem="0OR-k3-ht2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YcN-yE-TRc"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="toggleButton" destination="iL4-DB-zN0" id="baD-eg-cnw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <resources>
-        <image name="button_off" width="320" height="320"/>
+        <image name="button_on" width="320" height="320"/>
     </resources>
 </document>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B5CC6631D68AF870098B238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CC6621D68AF870098B238 /* AppDelegate.swift */; };
-		8B5CC6651D68AF870098B238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5CC6641D68AF870098B238 /* ViewController.swift */; };
 		8B5CC6681D68AF870098B238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5CC6661D68AF870098B238 /* Main.storyboard */; };
 		8B5CC66A1D68AF870098B238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5CC6691D68AF870098B238 /* Assets.xcassets */; };
 		8B5CC66D1D68AF870098B238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5CC66B1D68AF870098B238 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		8B5CC65F1D68AF870098B238 /* Flashlight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashlight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5CC6621D68AF870098B238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B5CC6641D68AF870098B238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B5CC6671D68AF870098B238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B5CC6691D68AF870098B238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B5CC66C1D68AF870098B238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				8B5CC6621D68AF870098B238 /* AppDelegate.swift */,
-				8B5CC6641D68AF870098B238 /* ViewController.swift */,
 				8B5CC6661D68AF870098B238 /* Main.storyboard */,
 				8B5CC6691D68AF870098B238 /* Assets.xcassets */,
 				8B5CC66B1D68AF870098B238 /* LaunchScreen.storyboard */,
@@ -91,7 +88,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Nic Roth";
 				TargetAttributes = {
 					8B5CC65E1D68AF870098B238 = {
@@ -137,7 +134,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5CC6651D68AF870098B238 /* ViewController.swift in Sources */,
 				8B5CC6631D68AF870098B238 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,8 +174,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -206,7 +204,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -225,8 +223,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -245,7 +245,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -256,6 +257,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6UDP3N5R5N;
 				INFOPLIST_FILE = Flashlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cm.nr.flashlight;
@@ -269,6 +271,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6UDP3N5R5N;
 				INFOPLIST_FILE = Flashlight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cm.nr.flashlight;
