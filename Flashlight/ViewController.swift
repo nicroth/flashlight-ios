@@ -11,7 +11,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var toggleButton: UIButton!
-    var captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    var captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tapToggleButton() {
-        if captureDevice != nil && captureDevice.torchMode == AVCaptureTorchMode.Off {
+        if captureDevice != nil && captureDevice?.torchMode == AVCaptureTorchMode.off {
             turnTorchOn()
         } else {
             turnTorchOff()
@@ -27,30 +27,30 @@ class ViewController: UIViewController {
     }
     
     func turnTorchOn() {
-        if captureDevice != nil && captureDevice.hasTorch {
+        if captureDevice != nil && (captureDevice?.hasTorch)! {
             do {
-                try captureDevice.lockForConfiguration()
-                captureDevice.torchMode = AVCaptureTorchMode.On
-                try captureDevice.setTorchModeOnWithLevel(AVCaptureMaxAvailableTorchLevel)
-                captureDevice.unlockForConfiguration()
+                try captureDevice?.lockForConfiguration()
+                captureDevice?.torchMode = AVCaptureTorchMode.on
+                try captureDevice?.setTorchModeOnWithLevel(AVCaptureMaxAvailableTorchLevel)
+                captureDevice?.unlockForConfiguration()
             } catch {
                 print(error)
             }
         }
-        toggleButton.setBackgroundImage(UIImage(named: "button_on"), forState: UIControlState.Normal)
+        toggleButton.setBackgroundImage(UIImage(named: "button_on"), for: UIControlState())
     }
     
     func turnTorchOff() {
-        if captureDevice != nil && captureDevice.hasTorch {
+        if captureDevice != nil && (captureDevice?.hasTorch)! {
             do {
-                try captureDevice.lockForConfiguration()
-                captureDevice.torchMode = AVCaptureTorchMode.Off
-                captureDevice.unlockForConfiguration()
+                try captureDevice?.lockForConfiguration()
+                captureDevice?.torchMode = AVCaptureTorchMode.off
+                captureDevice?.unlockForConfiguration()
             } catch {
                 print(error)
             }
         }
-        toggleButton.setBackgroundImage(UIImage(named: "button_off"), forState: UIControlState.Normal)
+        toggleButton.setBackgroundImage(UIImage(named: "button_off"), for: UIControlState())
     }
 }
 
